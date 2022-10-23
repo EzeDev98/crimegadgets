@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/signin.css' %}">
+    <title>Crime combating website</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- --------------------NAVBAR------------------------ -->
+        <div id="home">
+
+            <ul class="nav">
+                <ul class="nav">
+                    <a class="logo" href="{% url 'home' %}">
+                        <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuuUIhCGnmFABsytCEaj4Xn1DQUI4jxIRSXRzwJTsSG5VO-0wxUup72mC2XEi2LLq60o8&usqp=CAU" width="30px">
+                        <h3>Tech Zone</h3>
+                    </a>
+                    <div class="links">
+                        <div class="link">
+                            <li><a href="{% url 'home' %}">home</a></li>
+                            <li><a href="{% url 'read_more' %}">read more</a></li>
+                            <li><a href="{% url 'tool' %}">tools</a></li>
+                            <li><a href="{% url 'gallery' %}"> gallery</a></li>
+                            <li><a href="{% url 'contact' %}">contact</a></li>
+                        </div>
+                        <div class="sign">
+                            <li><a href="{% url 'signup' %}"><span></span>signup</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </ul>
+            <!-- --------------------BANNER PAGE-1------------------------ -->
+            <div class="banner">
+
+                <div id="contain">
+
+                    <div id="signin">
+
+                        <div class="position">
+                            <a class="logo" href="{% url 'home' %}">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuuUIhCGnmFABsytCEaj4Xn1DQUI4jxIRSXRzwJTsSG5VO-0wxUup72mC2XEi2LLq60o8&usqp=CAU" width="30px">
+                                <h3>Tech Zone</h3>
+                            </a>
+                        </div>
+
+                        <h3>Sign into your account</h3>
+                        <form action="signin" method="POST">
+
+                            {% csrf_token %}
+
+                            {% include 'includes/messages.html' %}
+
+                            <div class="box">
+                                <input type="text" name="username" required class="reg">
+                                <label>Username</label>
+                            </div>
+                            <div class="box">
+                                <input type="password" name="password" required class="reg">
+                                <label>Password</label>
+                            </div>
+                            <input type="checkbox" name=""><span>remember me</span><br>
+                            <div id="m_b"></div>
+                            <input type="submit" name="" value="Login"><br>
+                            <div class="btn">
+                                <p> Don't have an account?<a href="{% url 'signup' %}">Signup</a></p>
+                            </div>              
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

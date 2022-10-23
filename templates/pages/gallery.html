@@ -1,0 +1,507 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Shadows+Into+Light&display=swap' %}"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles/gallery.css' %}">
+    <title>Crime combating website</title>
+</head>
+
+<body>
+
+    <!-- -----------------------MAIN CONTAINER------------------------------ -->
+
+    <div class="container">
+
+
+
+        <div id="home">
+
+            <ul class="nav">
+
+                <ul class="nav">
+
+                    <a class="logo" href="{% url 'home' %}">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuuUIhCGnmFABsytCEaj4Xn1DQUI4jxIRSXRzwJTsSG5VO-0wxUup72mC2XEi2LLq60o8&usqp=CAU"
+                            width="30px">
+
+                        <h3>Tech Zone</h3>
+
+                    </a>
+
+                    <div class="links">
+
+                        <div class="link">
+
+                            <li><a href="{% url 'home' %}">home</a></li>
+
+                            <li><a href="{% url 'gallery' %}"> gallery</a></li>
+
+                            <li><a href="{% url 'tool' %}">tools</a></li>
+
+                            <li><a href="{% url 'read_more' %}">read</a></li>
+
+                            <li><a href="{% url 'contact' %}">contact</a></li>
+
+                        </div>
+
+                        <div class="sign">
+
+                            <a href="{% url 'signin' %}"><span></span>signin</a></li>
+
+                        </div>
+
+                    </div>
+
+                </ul>
+
+            </ul>
+
+            <!-- --------------------BANNER PAGE-1------------------------ -->
+
+            <div class="banner">
+
+                <div class="red-background"></div>
+
+                <div class="overlay">
+
+                    <div class="text">
+
+                        <h1>The future</h1>
+
+                        <p>
+
+                            Many law enforcement agencies are facing a
+                            future of reduced funding. Powerful new
+                            technologies provide a way for forces to operate
+                            and serve their communities more efficiently.
+                            The use of technology in law enforcement
+                            and crime prevention is developing rapidly-from drones
+                            and predictive analytics to biometrics- they are all
+                            helping to keep our cities and rural communities safer.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- --------------------QUICK LINKS------------------------ -->
+
+                <div class="quick-links">
+
+                    <ul>
+
+                        <li><i class="fa fa-share-alt"></i>
+
+                            <p>SHARE TO</p>
+
+                        </li>
+
+                        <li><i class="fa fa-audio-description"></i>
+
+                            <p>RECENT NEWS</p>
+
+                        </li>
+
+                        <li><i class="fa fa-cog"></i>
+
+                            <p>ANALYTICS</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!------------------------------SOCIAL LINKS------------------------ -->
+
+        <div class="social-links">
+
+
+            <a href="https://web.facebook.com/"><i class="fa a fa-facebook-f"></i></a>
+
+            <a href="https://www.linkedin.com/"><i class="fa b fa-linkedin"></i></a>
+
+            <a href="https://twitter.com/"><i class="fa c fa-twitter"></i></a>
+
+            <a href="https://www.instagram.com/"><i class="fa d fa-instagram"></i></a>
+
+
+        </div>
+
+
+        <div class="margin-bottom"></div>
+
+
+        <div id="crimes">
+
+            <div class="crime-page">
+
+                <h1>crime gallery</h1>
+
+                <p>here are some of the most committed crimes in nigeria</p>
+
+                <div class="content-wrapper">
+
+                    <div class="crime-portfolios">
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://ichef.bbci.co.uk/news/640/cpsprodpb/13E55/production/_107139418_d9b1f29f-1134-4177-9ee7-56392f9606b9.jpg)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>Murder</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    Death tools in Nigeria resulting from murder cannot be enumerated.
+                                    People are being massacred with imputy and the government is not
+                                    doing anything about it.
+                                    Bandits and terrorist has turned the country into a very unsafe place
+                                    to live in.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfrOhE1msXRW5ZOGS_-FdAb8ixP0l0V5UmvA&usqp=CAU)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>Robbery</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    Robbery and incessant stealing has become the order of the day.
+                                    This is caused mainly because of unemployment and joblessness in
+                                    the country.
+                                    If the government make efforts towards creating job opportunities,
+                                    it could help in curbing crimes.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://thenationonlineng.net/wp-content/uploads/2020/06/yTzk9kpTURBXy84ZGNmY2E3OWI1NWFhN2MzOGY4Yzk1MDVkZGM5ZTQ5OC5qcGeSlQMAFM0Cds0BYpUCzQMHAMPDgqEwAaExAQ.jpg)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>Rape</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    Young girls have suffered rape lately in the country.
+                                    Some of the victim of this rape cases has lost their lives
+                                    in the process.
+                                    If the government put proper security check in place these could
+                                    be abated.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://d3i71xaburhd42.cloudfront.net/bd5046eebe8110b3bd2a92a6ff3f5167820f633b/6-Figure1-1.png)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>cyber crimes</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    So many Nigerian youths are now into cyber crime popularly non as
+                                    yahoo-yahoo. This is also as a result of the deficiencies on the part
+                                    of the Nigerian government.
+                                    If jobs are provided in the country it will help to reduce it.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://i0.wp.com/businessday.ng/wp-content/uploads/2020/08/drug-abuse.jpg?fit=800%2C600&ssl=1)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>Drug Abuse</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    So many youths in Nigeria are into drugs. The youths are into
+                                    drugs mostly because they are depressed and frustrated because
+                                    of the bad economy of the country.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://issafrica.s3.amazonaws.com/site/images/banners/2022-05-03-iss-today-police-station-attacks-nigeria-banner.jpg)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>violence</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    Violent acts are common in the Nigerian society today.
+                                    These violent act is really posing a lot of insecurity
+                                    challenges to the masses.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://cdn.images.express.co.uk/img/dynamic/78/590x/Nigeria-gunmen-868223.jpg)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>kidnapping</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    Kidnapping is now the order of the day.
+                                    People are being kidnapped and killed on a daily
+                                    basis.
+                                    Mostly the kidnappers always demand for ransome from
+                                    their victims.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://cdn.vanguardngr.com/wp-content/uploads/2019/05/illegal-money.gif)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>money launderng</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    This is common among Nigerian politician.
+                                    That's a way of embezzling money and stealing
+                                    funds that belongs to the masses.
+                                    Its a very corrupt practise that must be combated.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://i0.wp.com/businessday.ng/wp-content/uploads/2021/11/extortion.png?fit=700%2C400&ssl=1)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>Bribery and corruption</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    This is the default nature of an average Nigerian.
+                                    The society is extremely corrupt to the extent that
+                                    you must have to bribe your way through every process
+                                    you're involved in.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://guardian.ng/wp-content/uploads/2021/03/boko-haram-vehicle.jpg)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>terrorism</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    Terrorism especially from Boko-Haram and other terrorist
+                                    organisation in the country has put the country into a state
+                                    of social unrest and chaos.
+                                    There's non-stop killings in the country daily.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://www.propertypro.ng/blog/wp-content/uploads/2016/09/10-Ways-to-Secure-your-Home-from-Burglars.jpg)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>burglary</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    Burglary is another form of crime in the country.
+                                    People are seen on daily basis breaking into peoples
+                                    home in their absence.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="crime-portfolio">
+
+                            <div class="crime-img-background"
+                                style="background-image: url(https://cdn.punchng.com/wp-content/uploads/2021/10/06211402/ARSON.jpg)"
+                                width="600px" height="450px"></div>
+
+                            <div class="ovalay"></div>
+
+                            <div class="img-text-wrapper">
+
+                                <h3>arson</h3>
+
+                                <hr>
+
+                                <p>
+
+                                    Arson has to do with burning and destruction of properties.
+                                    This happening on a daily basis in Nigeria.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="margin-bottom3"></div>
+
+        <footer>
+            <h3>all right reserved by eze moses john</h3>
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>

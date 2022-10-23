@@ -1,0 +1,341 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Shadows+Into+Light&display=swap' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+    <title>Crime combating website</title>
+    <script type="text/javascript" src="js/home.js"></script>
+</head>
+
+<body>
+
+    <!-- -----------------------MAIN CONTAINER------------------------------ -->
+
+    <div class="container">
+
+        <div class="page1">
+
+            <div id="home">
+
+                <ul class="nav">
+
+                    <ul class="nav">
+
+                        <a class="logo" href="{% url 'home' %}">
+
+                            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuuUIhCGnmFABsytCEaj4Xn1DQUI4jxIRSXRzwJTsSG5VO-0wxUup72mC2XEi2LLq60o8&usqp=CAU" width="30px">
+
+                            <h3>Tech Zone</h3>
+
+                        </a>
+
+                        <div class="links">
+
+                            <div class="link">
+
+                                <li><a href="{% url 'home' %}">home</a></li>
+
+                                <li><a href="{% url 'gallery' %}">gallery</a></li>
+
+                                <li><a href="{% url 'tool' %}">tools</a></li>
+
+                                <li><a href="{% url 'read_more' %}">read</a></li>
+
+                                <li><a href="{% url 'contact' %}">contact </a></li>
+
+                            </div>
+
+                            <div class="sign">
+
+                                <a href="{% url 'signin' %}"><span></span>signin</a></li>
+
+                            </div>
+
+                        </div>
+
+                    </ul>
+
+                </ul>
+
+                <!-- --------------------BANNER PAGE-1------------------------ -->
+
+                <div class="banner">
+
+                    <div class="red-background"></div>
+
+                    <div class="overlay">
+
+                        <div class="text">
+
+                            <h1>The future</h1>
+
+                            <p>
+
+                                Many law enforcement agencies are facing a
+                                future of reduced funding. Powerful new
+                                technologies provide a way for forces to operate
+                                and serve their communities more efficiently.
+                                The use of technology in law enforcement
+                                and crime prevention is developing rapidly-from drones
+                                and predictive analytics to biometrics- they are all
+                                helping to keep our cities and rural communities safer.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- --------------------QUICK LINKS------------------------ -->
+
+                    <div class="quick-links">
+
+                        <ul>
+
+                            <li><i class="fa fa-share-alt"></i>
+
+                                <p>SHARE TO</p>
+
+                            </li>
+
+                            <li><i class="fa fa-audio-description"></i>
+
+                                <p>RECENT NEWS</p>
+
+                            </li>
+
+                            <li><i class="fa fa-cog"></i>
+
+                                <p>ANALYTICS</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        
+            <!------------------------------SOCIAL LINKS------------------------ -->
+
+            <div class="social-links">
+
+                    <a href="https://web.facebook.com/"><i class="fa a fa-facebook-f"></i></a>
+
+                    <a href="https://www.linkedin.com/"><i class="fa b fa-linkedin"></i></a>
+
+                    <a href="https://twitter.com/"><i class="fa c fa-twitter"></i></a>
+
+                    <a href="https://www.instagram.com/"><i class="fa d fa-instagram"></i></a>
+
+
+            </div>
+
+        <div>
+
+
+        <div class="margin-bottom"></div>
+
+
+        <!-- -------------------CRIME-TOOLS------------------------- -->
+
+
+
+        <div id="tools">
+
+            <div class="tools-page">
+
+                <div class="t-heading">
+
+                    <h1>tools</h1>
+
+                    <p>here are some tools used in combating crimes</p>
+
+                </div>
+
+                <div class="tools-content">
+
+                    <div class="tools-box">
+
+                        <div class="tools-img">
+
+                            <div class="tools-type">ALPR</div>
+
+                            <img src="https://www.policechiefmagazine.org/wp-content/uploads/iStock_15612669_LARGE-825x510.jpg">
+
+                        </div>
+
+                        <div class="tools-text">
+
+                            <a href="">Takes live camera and video.
+                                Detects vehicle and decodes license plate, vehicle make,
+                                model,color and more.
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tools-box">
+
+                        <div class="tools-img">
+
+                            <div class="tools-type">Biometrics</div>
+
+                            <img src="https://identityreview.com/wp-content/uploads/2020/08/biometric-authentication-important-factor-secure-stronger-mobile-payment-system-750x410-1.jpg">
+
+                        </div>
+
+                        <div class="tools-text">
+
+                            <a href="#"> The measurement and statistical analysis of
+                                people's unique physical and behavioural characteristics.
+                                The technology is mainly used for identification and access
+                                control.
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tools-box">
+
+                        <div class="tools-img">
+
+                            <div class="tools-type">ShotSpotter</div>
+
+                            <img src="https://www.aclu.org/wp-content/uploads/2021/08/ShotSpotter-Social-share.jpg">
+
+                        </div>
+
+                        <div class="tools-text">
+
+                            <a href=""> This is a gunshot detection system. Precision
+                                policing solutions that help save lives, deter crimes, and make
+                                communities safer.
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tools-box">
+
+                        <div class="tools-img">
+
+                            <div class="tools-type">Police Drone</div>
+
+                            <img src="https://media.istockphoto.com/photos/police-drone-quadrocopter-flies-in-the-blue-sky-autonomous-traffic-picture-id655740910?k=20&m=655740910&s=612x612&w=0&h=wwCLIb-Jdu7H-KzxNY86OJw3bCbtp8qruL7t4LjbUgc=">
+
+                        </div>
+
+                        <div class="tools-text">
+
+                            <a href=""> It comes with a high-performance graphics processor
+                                and uses the Nivida Jetson module for ultra-high high-performance
+                                and energy efficiency. It can run modern AI workloads.
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tools-box">
+
+                        <div class="tools-img">
+
+                            <div class="tools-type">Tasers</div>
+
+                            <img src="https://image.cnbcfm.com/api/v1/image/104951153-GettyImages-813951340.jpg?v=1532563699">
+
+                        </div>
+
+                        <div class="tools-text">
+
+                            <a href=""> A taser is a non-lethal electroshock weapon used to
+                                incapacitate targets via shocks that temporarily impair's the target's
+                                function.
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tools-box">
+
+                        <div class="tools-img">
+
+                            <div class="tools-type">Body Camera</div>
+
+                            <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1328/production/_118740940_policebodycamera.jpg">
+
+                        </div>
+
+                        <div class="tools-text">
+
+                            <a href=""> Fully-featured high definition video + audio body worn camera
+                                designed to collect video,audio, and images of public events That
+                                the user is involved in.
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="margin-bottom1"></div>
+
+        <!-- ------------------------CRIME-CHECKER------------------------------ -->
+
+
+        <div id="main">
+
+            <h1>crime checker</h1>
+
+            <p class="p">here is an application for checking crime rates in nigerian states</p>
+
+            <div id="inputs" align="center">
+
+                <h2>Enter any state in Nigeria and find out the crime rates</h2>
+
+                <input type="text" name="" id="state" placeholder="State Name">
+
+                <br>
+
+                <input type="button" name="" onclick="result()" value="check your result!">
+
+                <p id="output"></p>
+
+            </div>
+
+        </div>
+
+        <div class="margin-bottom3"></div>
+       
+        
+        <footer>
+            <h3>all right reserved by eze moses john</h3>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
